@@ -1,161 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alexandre Peryklis">
-    <meta name="description" content="Equilíbrio em Movimento - Fisioterapia personalizada e dicas de saúde para uma vida em equilíbrio.">
-    <meta name="keywords" content="Fisioterapia, Saúde, Bem-estar, Reabilitação, Qualidade de Vida">
-    <title>Equilíbrio em Movimento</title>
-    <!-- <link rel="stylesheet" href="styles.css"> Link para a folha de estilos: -->    
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-    <script>
-        function validateForm() {
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const message = document.getElementById('message');
-            const submitButton = document.querySelector('button[type=submit]');
-
-            if (name.value.trim() && email.validity.valid && message.value.trim()) {
-                submitButton.disabled = false;
-            } else {
-                submitButton.disabled = true;
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        section {
-            padding: 20px;
-        }
-        .about {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            width: 80%;
-            max-width: 900px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>VÉRTICE TOTAL - Sistema de Evolução</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Equilíbrio em Movimento</h1>
-            <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Cuidando do seu corpo, promovendo o equilíbrio</h2>
-                <p>Descubra como a fisioterapia pode transformar sua vida. <mark>Invista na sua saúde!</mark></p>
-                <a href="#servicos" class="btn">Saiba mais</a>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>⚡ VÉRTICE TOTAL</h1>
+                <p class="subtitle">Sistema de Evolução Completa - Alexandre 2.0</p>
             </div>
-        </section>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Sequência</span>
+                    <span class="stat-value" id="streak">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Nível</span>
+                    <span class="stat-value" id="level">1</span>
+                </div>
+            </div>
+        </header>
 
-        <section id="sobre" class="container">
-            <h2>Sobre Nós</h2>
-            <p>No <strong>Equilíbrio em Movimento</strong>, oferecemos atendimento fisioterapêutico personalizado, focado em reabilitação, prevenção e qualidade de vida. Nossa missão é proporcionar bem-estar e equilíbrio físico para cada paciente.</p>
-            <blockquote>"Saúde é o estado de completo bem-estar físico, mental e social."<small>- Organização Mundial da Saúde (OMS)</small></blockquote>
-        </section>
-        
-        <section id="servicos" class="container">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li><u>Reabilitação Física:</u> Tratamentos especializados para recuperar movimentos e aliviar dores. Exemplo: reabilitação pós-cirúrgica de joelho ou ombro.</li>
-                <li><u>Prevenção de Lesões:</u> Orientação personalizada para evitar problemas futuros. Exemplo: programas de fortalecimento muscular para evitar lombalgia.</li>
-                <li><u>Fisioterapia Esportiva:</u> Cuidados específicos para atletas amadores e profissionais. Exemplo: tratamento de lesões por esforço repetitivo em corredores.</li>
-            </ul>
-            <p>Também oferecemos serviços adicionais, como: <abbr title="Exercícios Terapêuticos">ET</abbr> e <abbr title="Educação Postural">EP</abbr>.</p>
-        </section>
-    
-        <section id="blog" class="container">
-            <h2>Últimas do Blog</h2>
-            <ol>
-                <li><a href="#">5 Dicas para Melhorar sua Postura no Dia a Dia</a></li>
-                <li><a href="#">Os Benefícios da Fisioterapia Respiratória</a></li>
-                <li><a href="#">Como Evitar Lesões Durante o Exercício</a></li>
-            </ol>
-        </section>
-
-        <section id="curiosidades" class="container">
-            <h2>Curiosidades</h2>
-            <p>Você sabia que a prática de fisioterapia pode ajudar a aliviar <i>dores crônicas</i> e melhorar a qualidade do sono?</p>
-            <p>Veja alguns números impressionantes sobre fisioterapia:</p>
-            <ul>
-                <li>Reduz <strong>40%</strong> dos casos de lesões reincidentes.</li>
-                <li>Melhora a mobilidade em até <sup>80%</sup> após 3 meses de tratamento.</li>
-                <li>Reabilitação postural diminui em <sub>20%</sub> o risco de quedas em idosos.</li>
-            </ul>
-        </section>
-    
-        <section id="contato" class="container">
-            <h2>Contato</h2>
-            <form action="send-form.php" method="POST" oninput="validateForm()">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-            <p><small>* Responderemos em até 24 horas.</small></p>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Equilíbrio em Movimento. Todos os direitos reservados. <font color="gray">Feito com carinho para você.</font></p>
+        <!-- Motivational Quote -->
+        <div class="quote-section" id="quoteSection">
+            <p class="quote-text" id="quoteText"></p>
+            <p class="quote-author" id="quoteAuthor"></p>
         </div>
-    </footer>
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="dashboard">📊 Dashboard</button>
+            <button class="tab-btn" data-tab="registro">✍️ Registro</button>
+            <button class="tab-btn" data-tab="desafios">🎯 Desafios</button>
+            <button class="tab-btn" data-tab="historico">📅 Histórico</button>
+        </nav>
+
+        <!-- Dashboard Tab -->
+        <div class="tab-content active" id="dashboard">
+            <div class="pilares-grid">
+                <!-- Pilar Físico -->
+                <div class="pilar-card physical">
+                    <div class="pilar-header">
+                        <h3>💪 FÍSICO</h3>
+                        <span class="pilar-score" id="physicalScore">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="physicalProgress"></div>
+                    </div>
+                    <div class="pilar-stats">
+                        <p>Treinos esta semana: <strong id="physicalWeek">0</strong></p>
+                        <p>Total: <strong id="physicalTotal">0</strong></p>
+                    </div>
+                </div>
+
+                <!-- Pilar Mental -->
+                <div class="pilar-card mental">
+                    <div class="pilar-header">
+                        <h3>🧠 MENTAL</h3>
+                        <span class="pilar-score" id="mentalScore">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="mentalProgress"></div>
+                    </div>
+                    <div class="pilar-stats">
+                        <p>Estudos esta semana: <strong id="mentalWeek">0</strong></p>
+                        <p>Total: <strong id="mentalTotal">0</strong></p>
+                    </div>
+                </div>
+
+                <!-- Pilar Emocional -->
+                <div class="pilar-card emotional">
+                    <div class="pilar-header">
+                        <h3>❤️ EMOCIONAL</h3>
+                        <span class="pilar-score" id="emotionalScore">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="emotionalProgress"></div>
+                    </div>
+                    <div class="pilar-stats">
+                        <p>Ações esta semana: <strong id="emotionalWeek">0</strong></p>
+                        <p>Total: <strong id="emotionalTotal">0</strong></p>
+                    </div>
+                </div>
+
+                <!-- Pilar Espiritual -->
+                <div class="pilar-card spiritual">
+                    <div class="pilar-header">
+                        <h3>✝️ ESPIRITUAL</h3>
+                        <span class="pilar-score" id="spiritualScore">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="spiritualProgress"></div>
+                    </div>
+                    <div class="pilar-stats">
+                        <p>Devocionais esta semana: <strong id="spiritualWeek">0</strong></p>
+                        <p>Total: <strong id="spiritualTotal">0</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Mission -->
+            <div class="mission-section">
+                <h2>🎯 Missão de Hoje</h2>
+                <div class="mission-checklist">
+                    <label class="mission-item">
+                        <input type="checkbox" id="mission1">
+                        <span>Treino físico (20-40 min)</span>
+                    </label>
+                    <label class="mission-item">
+                        <input type="checkbox" id="mission2">
+                        <span>Leitura/Estudo (30 min)</span>
+                    </label>
+                    <label class="mission-item">
+                        <input type="checkbox" id="mission3">
+                        <span>Tempo com família (30 min)</span>
+                    </label>
+                    <label class="mission-item">
+                        <input type="checkbox" id="mission4">
+                        <span>Oração/Devocional (10 min)</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registro Tab -->
+        <div class="tab-content" id="registro">
+            <div class="registro-form">
+                <h2>✍️ Registrar Progresso</h2>
+                
+                <div class="form-section">
+                    <h3>💪 Treino Físico</h3>
+                    <select id="physicalType" class="form-input">
+                        <option value="">Selecione o tipo</option>
+                        <option value="TF">Planilha TF</option>
+                        <option value="Hipertrofia">Hipertrofia</option>
+                        <option value="Calistenia">Calistenia</option>
+                        <option value="Fera da Bola">Fera da Bola</option>
+                        <option value="Flexibilidade">Flexibilidade</option>
+                        <option value="Futebol">Futebol/Jogo</option>
+                        <option value="Corrida">Corrida</option>
+                    </select>
+                    <input type="number" id="physicalDuration" class="form-input" placeholder="Duração (minutos)">
+                    <textarea id="physicalNotes" class="form-input" placeholder="Notas do treino..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>🧠 Desenvolvimento Mental</h3>
+                    <select id="mentalType" class="form-input">
+                        <option value="">Selecione o tipo</option>
+                        <option value="Fisioterapia">Estudo Fisioterapia</option>
+                        <option value="Programação">Programação (DIO)</option>
+                        <option value="Investimentos">Investimentos</option>
+                        <option value="Inglês">Inglês (Duolingo)</option>
+                        <option value="Leitura">Leitura de Livro</option>
+                    </select>
+                    <input type="text" id="mentalTopic" class="form-input" placeholder="Tópico estudado">
+                    <input type="number" id="mentalDuration" class="form-input" placeholder="Duração (minutos)">
+                    <textarea id="mentalNotes" class="form-input" placeholder="O que aprendi..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>❤️ Desenvolvimento Emocional</h3>
+                    <select id="emotionalType" class="form-input">
+                        <option value="">Selecione o tipo</option>
+                        <option value="Família">Tempo com Família</option>
+                        <option value="Filho">Tempo com Filho</option>
+                        <option value="Esposa">Tempo com Esposa</option>
+                        <option value="Gratidão">Exercício de Gratidão</option>
+                        <option value="Reflexão">Reflexão Pessoal</option>
+                        <option value="Desafio Amar">Desafio de Amar</option>
+                    </select>
+                    <textarea id="emotionalNotes" class="form-input" placeholder="Ação realizada e sentimentos..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>✝️ Desenvolvimento Espiritual</h3>
+                    <select id="spiritualType" class="form-input">
+                        <option value="">Selecione o tipo</option>
+                        <option value="Leitura Bíblica">Leitura Bíblica</option>
+                        <option value="Oração">Oração</option>
+                        <option value="Devocional">Devocional</option>
+                        <option value="Café com Deus">Café com Deus Pai</option>
+                        <option value="Jejum">Jejum</option>
+                        <option value="Meditação">Meditação</option>
+                    </select>
+                    <input type="text" id="spiritualVerse" class="form-input" placeholder="Versículo/Tema">
+                    <textarea id="spiritualNotes" class="form-input" placeholder="Reflexão espiritual..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>📝 Reflexão do Dia</h3>
+                    <textarea id="dailyReflection" class="form-input" placeholder="O que aprendi hoje? Onde evoluí? O que posso melhorar?"></textarea>
+                    <div class="rating-section">
+                        <label>Nota do dia (1-10):</label>
+                        <input type="number" id="dayRating" class="form-input" min="1" max="10" placeholder="8">
+                    </div>
+                </div>
+
+                <button class="btn-primary" id="saveRegistro">💾 Salvar Registro</button>
+            </div>
+        </div>
+
+        <!-- Desafios Tab -->
+        <div class="tab-content" id="desafios">
+            <h2>🎯 Desafios Ativos</h2>
+            
+            <div class="desafios-grid">
+                <!-- Desafio 40 Dias -->
+                <div class="desafio-card">
+                    <h3>❤️ Desafio de Amar (40 Dias)</h3>
+                    <div class="desafio-progress">
+                        <p>Dia <strong id="desafio40Day">0</strong> de 40</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="desafio40Progress"></div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" id="startDesafio40">Iniciar Desafio</button>
+                    <button class="btn-secondary" id="completeDesafio40Day">Completar Dia</button>
+                </div>
+
+                <!-- Desafio 21 Dias Bíblia -->
+                <div class="desafio-card">
+                    <h3>✝️ Trilha Bíblica (21 Dias)</h3>
+                    <div class="desafio-progress">
+                        <p>Dia <strong id="desafio21Day">0</strong> de 21</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="desafio21Progress"></div>
+                        </div>
+                    </div>
+                    <div class="bible-reading" id="bibleReading"></div>
+                    <button class="btn-secondary" id="startDesafio21">Iniciar Desafio</button>
+                    <button class="btn-secondary" id="completeDesafio21Day">Completar Dia</button>
+                </div>
+
+                <!-- Desafio 7 Dias Reconexão -->
+                <div class="desafio-card">
+                    <h3>🌹 Reconexão (7 Dias)</h3>
+                    <div class="desafio-progress">
+                        <p>Dia <strong id="desafio7Day">0</strong> de 7</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="desafio7Progress"></div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" id="startDesafio7">Iniciar Desafio</button>
+                    <button class="btn-secondary" id="completeDesafio7Day">Completar Dia</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Histórico Tab -->
+        <div class="tab-content" id="historico">
+            <h2>📅 Histórico de Registros</h2>
+            <div class="filters">
+                <select id="filterPilar" class="form-input">
+                    <option value="all">Todos os Pilares</option>
+                    <option value="physical">Físico</option>
+                    <option value="mental">Mental</option>
+                    <option value="emotional">Emocional</option>
+                    <option value="spiritual">Espiritual</option>
+                </select>
+                <button class="btn-secondary" id="exportData">📥 Exportar Dados</button>
+            </div>
+            <div id="historicoList" class="historico-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-   
